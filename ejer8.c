@@ -28,7 +28,9 @@ int main() {
     for (int i = 0; i < M; ++i) {
         printf("Vector %d: ", i + 1);
         for (int j = 0; j < N; ++j) {
-            printf("%d ", vectores[i][j]);
+            if(vectores[i][j]>0 && vectores[i][j]<10000){
+                printf("%d ", vectores[i][j]);
+            }
         }
         printf("\n");
         free(vectores[i]); 
